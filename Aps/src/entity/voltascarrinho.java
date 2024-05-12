@@ -4,7 +4,7 @@ public class voltascarrinho {
     
     private int id;
     private int volta_numero;
-    private String tempo;
+    private String tempo_total;
     private String piloto;
     private String equipe;
 
@@ -16,12 +16,12 @@ public class voltascarrinho {
         this.id = id;
     }
 
-    public String getTempo() {
-        return tempo;
+    public String getTempo_total() {
+        return tempo_total;
     }
 
-    public void setTempo(String tempo) {
-        this.tempo = tempo;
+    public void setTempo_total(String tempo_total) {
+        this.tempo_total = tempo_total;
     }
 
     public int getVolta_numero() {

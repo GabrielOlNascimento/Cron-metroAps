@@ -10,13 +10,13 @@ public class voltascarrinhoDAO {
 
     public void inserirInfo(voltascarrinho voltascarrinho){
 
-        String sql = "INSERT INTO VOLTASCARRINHO(ID, VOLTA_NUMERO, TEMPO, PILOTO, EQUIPE) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO VOLTASCARRINHO(ID, VOLTA_NUMERO, TEMPO_TOTAL, PILOTO, EQUIPE) VALUES (?,?,?,?,?)";
 
         PreparedStatement ps = null;
 
         try {
             ps = Conexao.getConexao().prepareStatement(sql);
-            ps.setString(3, voltascarrinho.getTempo());
+            ps.setString(3, voltascarrinho.getTempo_total());
             ps.setInt(1, voltascarrinho.getId());
             ps.setInt(2, voltascarrinho.getVolta_numero());
             ps.setString(4, voltascarrinho.getPiloto());
