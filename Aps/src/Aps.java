@@ -12,6 +12,7 @@ public class Aps {
     v.setTempo_total("40");
     v.setPiloto("40");
     v.setEquipe("40");
+    v.setVolta_tempo(20);
     
     
         

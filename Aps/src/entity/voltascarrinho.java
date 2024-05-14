@@ -7,6 +7,7 @@ public class voltascarrinho {
     private String tempo_total;
     private String piloto;
     private String equipe;
+    private int volta_tempo;
 
     public int getId() {
         return id;
@@ -48,4 +49,11 @@ public class voltascarrinho {
         this.equipe = equipe;
     }
     
+    public int getVolta_tempo() {
+        return volta_tempo;
+    }
+
+    public void setVolta_tempo(int volta) {
+        this.volta_tempo = volta;
+    }
 }
